@@ -1,0 +1,13 @@
+<p>loginform works!</p>
+<form (ngSubmit)="onSubmit()">
+   
+    
+    <label>Email:</label>
+    <input type="text" [(ngModel)]="email" name="email">
+    <label>Password:</label>
+    <input type="password" [(ngModel)]="passwordhash" name="passwordhash">
+   
+    <button class="buttonimage1" type="submit">Submit</button>
+</form>
+
+<!-- <app-loggedin  [forthkey]="forthkeyValue" [fifthkey]="fifthkeyValue"></app-loggedin> -->

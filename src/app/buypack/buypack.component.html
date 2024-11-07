@@ -1,0 +1,34 @@
+<app-header2></app-header2>
+
+<div class="container mt-3" *ngIf="pricePackages.length > 0; "  style="display: flex;">
+  
+  
+  <div class="package" *ngFor="let package of pricePackages; let i = index; " (click)="onPackageClick(i + 1)">
+   
+    <div class="package__item"  >
+      <div class="package__header" [ngStyle]="{ 'background-color': package.color}">
+        
+        <div class="package__name">{{ package.planName }}</div>
+      </div>
+      <div class="package__body">
+        <div class="package__price-container">
+          <div class="package__price">{{ package.price  }}</div>
+        </div>
+        <ul>
+          <li *ngFor="let detail of package.details.split(',')">{{ detail }}</li> <!-- Split details if they are comma-separated -->
+        </ul>
+      </div>
+      <div class="package__footer" >
+        <button [ngStyle]="{ 'background-color': package.color}" (click)="getStarted(package.packno)" >Get Started</button>
+      </div>
+    
+    </div>
+  </div>
+
+
+</div>
+
+<!-- If no data is fetched yet -->
+<div class="container mt-3" *ngIf="pricePackages.length === 0">
+  <p>No packages available at the moment.</p>
+</div>

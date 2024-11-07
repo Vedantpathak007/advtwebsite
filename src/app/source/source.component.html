@@ -1,0 +1,30 @@
+
+
+
+
+ <div class="div1">
+  <h2> Register Account</h2>
+  <form (ngSubmit)="onSubmit()">
+   
+    <label>Username:</label>
+    <input type="text" [(ngModel)]="username" name="username">
+
+    <label>Email:</label>
+    <input type="text" [(ngModel)]="email" name="email">
+    <label>Password:</label>
+    <input type="password" [(ngModel)]="passwordhash" name="passwordhash">
+    <label>Status Message:</label>
+    <input type="text" [(ngModel)]="statusmessage" name="statusmessage">
+    
+    <label>DOB:</label>
+    <input type="date" [(ngModel)]="dob" name="dob">
+    
+    <video [hidden]="isHidden1" #video width="100" height="100" autoplay></video>
+    <canvas  [hidden]="isHidden2" #canvas width="100" height="100"></canvas>
+    <button class="buttonimage" [hidden]="isHidden3" type="button" (click)="captureImage()">Capture Image</button>
+    <button class="buttonimage" [hidden]="isHidden4" type="button" (click)="resetImage()">Reset</button>
+    
+
+    <button class="buttonimage1" type="submit">Submit</button>
+  </form>
+</div>

@@ -1,0 +1,40 @@
+.title{
+    
+        position: relative;
+        padding: 0;
+        margin: 0;
+        font-family: "Raleway", sans-serif;
+        font-weight: 300;
+        font-size: 40px;
+        color: #080808;
+        -webkit-transition: all 0.4s ease 0s;
+        -o-transition: all 0.4s ease 0s;
+        transition: all 0.4s ease 0s;
+}
+
+.subtitles{
+    text-align: center;
+  color:#222; font-size:30px; font-weight:400;
+  text-transform: uppercase;
+  word-spacing: 1px; letter-spacing:2px; color:#c50000;
+}
+.circle-button {
+    float: right;
+    background-color: #FF6B6B; /* Red color */
+    border: none;
+    border-radius: 50%; /* Makes the button circular */
+    color: white; /* Color of the plus sign */
+    font-size: 24px; /* Size of the plus sign */
+    width: 50px; /* Width of the button */
+    height: 50px; /* Height of the button */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .circle-button span {
+    display: block;
+    line-height: 0; /* To vertically center the plus sign */
+  }
+  
