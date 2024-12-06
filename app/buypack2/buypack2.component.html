@@ -1,0 +1,22 @@
+
+<app-header2></app-header2>
+<div class="div1">
+    
+     <form (ngSubmit)="onSubmit()">
+   
+          <label>Name:</label>
+          <input type="text" [(ngModel)]="name" name="name">
+      
+          <label>Card Number:</label>
+          <input type="text" [(ngModel)]="cardnumber" name="cardnumber">
+          <label>CVV:</label>
+          <input type="password" [(ngModel)]="cvv" name="cvv">
+          
+          <label>Expiry Date:</label>
+          <input type="date" [(ngModel)]="dob" name="dob">
+          
+         
+      
+          <button class="buttonimage1" type="submit">Submit</button>
+        </form>
+</div>
